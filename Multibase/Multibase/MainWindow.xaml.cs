@@ -24,5 +24,22 @@ namespace Multibase
         {
             InitializeComponent();
         }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Clientes clienteObj = new Clientes();
+            Cuentas cuentaObj = new Cuentas();
+            Habitacion habitacionObj = new Habitacion();
+            Reservacion reservacionObj = new Reservacion();
+            Usuarios usuarioObj = new Usuarios();
+
+            stackClient.Children.Add(clienteObj);
+            stackCuentas.Children.Add(cuentaObj);
+            stackHab.Children.Add(habitacionObj);
+            stackRes.Children.Add(reservacionObj);
+            stackUser.Children.Add(usuarioObj);
+
+
+        }
     }
 }
