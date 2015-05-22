@@ -6,6 +6,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
-            
+        <ListView HorizontalAlignment="Left" Height="215" Margin="66,42,0,0" VerticalAlignment="Top" Width="554" RenderTransformOrigin="-0.639,0.625" FontFamily="Microsoft JhengHei Light" FontSize="14">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Cuenta" Width="80"/>
+                    <GridViewColumn Header="idReservacion" Width="100"/>
+                    <GridViewColumn Header="Nombre Cliente" Width="270"/>
+                    <GridViewColumn Header="Status" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Habitación: " HorizontalAlignment="Left" Margin="58,259,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei Light" FontSize="18" Foreground="White"/>
+        <TextBox x:Name="txtHab" HorizontalAlignment="Left" Height="23" Margin="165,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="buscar" Content="Buscar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="210,299,0,0" RenderTransformOrigin="0.333,0.541" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+        <Button x:Name="visualizar" Content="Visualizar" HorizontalAlignment="Left" Margin="532,299,0,0" VerticalAlignment="Top" Width="88" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+        <Button x:Name="agregarServicios" Content="Agregar Servicios" HorizontalAlignment="Left" Margin="147,331,0,0" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Microsoft JhengHei Light"/>
+
     </Grid>
 </UserControl>

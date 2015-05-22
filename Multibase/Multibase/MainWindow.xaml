@@ -5,12 +5,41 @@
         Title="MainWindow" Height="554" Width="730">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="395" Margin="20,102,0,0" VerticalAlignment="Top" Width="681" SelectionChanged="TabControl_SelectionChanged">
+
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Grid Name="Panel">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Panel" Property="Background" Value="#FF55C3A4" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Panel" Property="Background" Value="#FF9BDAC8" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+
             <TabItem Header="Habitación" FontFamily="Microsoft JhengHei Light" FontSize="14" >
                 <TabItem.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>
                 </TabItem.BorderBrush>
                 <Grid Background="#FF9EC4E4">
-                    <StackPanel x:Name="stackHab" HorizontalAlignment="Left" Height="373" VerticalAlignment="Top" Width="675"/>
+                    <ScrollViewer x:Name="scrollHab" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="675">
+                        <StackPanel x:Name="stackHab" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Stretch" Width="675"/>
+                    </ScrollViewer>
                 </Grid>
             </TabItem>
             <TabItem Header="Clientes" FontFamily="Microsoft JhengHei Light" FontSize="14">

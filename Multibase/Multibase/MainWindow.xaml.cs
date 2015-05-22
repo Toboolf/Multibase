@@ -23,10 +23,6 @@ namespace Multibase
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
             Clientes clienteObj = new Clientes();
             Cuentas cuentaObj = new Cuentas();
             Habitacion habitacionObj = new Habitacion();
@@ -38,7 +34,12 @@ namespace Multibase
             stackHab.Children.Add(habitacionObj);
             stackRes.Children.Add(reservacionObj);
             stackUser.Children.Add(usuarioObj);
+        }
 
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+           
 
         }
     }

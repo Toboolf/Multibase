@@ -6,6 +6,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
-            
+        <ListView HorizontalAlignment="Left" Height="255" Margin="27,32,0,0" VerticalAlignment="Top" Width="625">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID Usuario"/>
+                    <GridViewColumn Header="Nombre" Width="300"/>
+                    <GridViewColumn Header="Tipo" Width="300"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="agregarUsuario" Content="Agregar" HorizontalAlignment="Left" Margin="173,323,0,0" VerticalAlignment="Top" Width="75" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+        <Button x:Name="cambiaPass" Content="Cambiar Contraseña" HorizontalAlignment="Left" Margin="392,323,0,0" VerticalAlignment="Top" Width="151" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+
     </Grid>
 </UserControl>

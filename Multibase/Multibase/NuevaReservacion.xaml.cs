@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Multibase
 {
     /// <summary>
-    /// Interaction logic for Cuentas.xaml
+    /// Interaction logic for NuevaReservacion.xaml
     /// </summary>
-    public partial class Cuentas : UserControl
+    public partial class NuevaReservacion : UserControl
     {
-        public Cuentas()
+        public NuevaReservacion()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

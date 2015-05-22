@@ -6,21 +6,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
-        <ScrollViewer HorizontalAlignment="Left" Height="295" VerticalAlignment="Top" Width="615" Margin="31,10,0,0">
-            <ListView Name="gridCliente" ItemsSource="{Binding Path=clientesHotelList}">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=nombre}" Header="Nombre" Width="200"/>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=apPat}" Header="Apellido paterno" Width="200"/>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=apMat}" Header="Apellido materno" Width="200"/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        </ScrollViewer>
-        <Button Content="Agregar" HorizontalAlignment="Left" Margin="111,334,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="351,334,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Visualizar" HorizontalAlignment="Left" Margin="490,334,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Notificar" HorizontalAlignment="Left" Margin="229,334,0,0" VerticalAlignment="Top" Width="75"/>
+        <!--ScrollViewer x:Name="___No_Name_" HorizontalAlignment="Left" Height="295" VerticalAlignment="Top" Width="620" Margin="25,10,0,0" HorizontalScrollBarVisibility="Hidden"-->
+        <ListView Name="gridCliente" ItemsSource="{Binding Path=clientesHotelList}" FontFamily="Microsoft JhengHei Light" FontSize="14" Height="295" Margin="35,27,36,51" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=nombre}" Header="Nombre" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=apPat}" Header="Apellido paterno" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=apMat}" Header="Apellido materno" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <!--ScrollViewer/-->
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="111,334,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="237,334,0,0" VerticalAlignment="Top" Width="75" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
+        <Button Content="Visualizar" HorizontalAlignment="Left" Margin="361,334,0,0" VerticalAlignment="Top" Width="85" FontFamily="Microsoft JhengHei Light" FontSize="16" RenderTransformOrigin="0.271,0.72"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="502,334,0,0" VerticalAlignment="Top" Width="75" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
 
     </Grid>
 </UserControl>

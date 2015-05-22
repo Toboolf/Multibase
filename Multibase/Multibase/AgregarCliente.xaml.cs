@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Multibase
 {
     /// <summary>
-    /// Interaction logic for RegistroGYM.xaml
+    /// Interaction logic for AgregarCliente.xaml
     /// </summary>
-    public partial class RegistroGYM : UserControl
+    public partial class AgregarCliente : UserControl
     {
-        public RegistroGYM()
+        public AgregarCliente()
         {
             InitializeComponent();
         }

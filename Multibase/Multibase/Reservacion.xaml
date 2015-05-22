@@ -6,6 +6,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
-            
+        <ListView HorizontalAlignment="Left" Height="293" VerticalAlignment="Top" Width="606" Margin="35,16,0,0" FontFamily="Microsoft JhengHei Light" FontSize="14">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="idReservacion" Width="200"/>
+                    <GridViewColumn Header="Fecha Llegada" Width="200"/>
+                    <GridViewColumn Header="Status" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="cancelarRes" Content="Cancelar Reservacion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="261,327,0,0" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
     </Grid>
 </UserControl>

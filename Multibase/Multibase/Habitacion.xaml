@@ -4,8 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="373" d:DesignWidth="675">
+             d:DesignHeight="220" d:DesignWidth="675">
     <Grid>
-            
+        <Label x:Name="lblNombreHabitacion" Content="Label" HorizontalAlignment="Left" Margin="29,4,0,0" VerticalAlignment="Top" Height="33" Width="144" FontFamily="Microsoft JhengHei Light" FontSize="18" Foreground="White"/>
+        <Label Content="Precio: " HorizontalAlignment="Left" Margin="29,187,0,0" VerticalAlignment="Top" Width="95" FontFamily="Microsoft JhengHei Light" FontSize="14" Foreground="White"/>
+        <!--ScrollViewer HorizontalAlignment="Left" Height="145" Margin="29,42,0,0" VerticalAlignment="Top" Width="301"-->
+            <ListView Height="145" Width="284" Margin="29,37,362,38" FontFamily="Microsoft JhengHei Light" FontSize="14">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=caracteristica}" Header="Caracteristica" Width="172"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=cantidad}" Header="Cantidad" Width="112"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        <!--/ScrollViewer-->
+        <Label x:Name="lblPrecio" Content="Label" HorizontalAlignment="Left" Margin="129,187,0,0" VerticalAlignment="Top" Width="86" FontFamily="Microsoft JhengHei Light" FontSize="14" Foreground="White"/>
+
     </Grid>
 </UserControl>
