@@ -20,16 +20,9 @@ namespace Multibase
     /// </summary>
     public partial class NuevaReservacion : UserControl
     {
-        Boolean visible;
         public NuevaReservacion()
         {
             InitializeComponent();
-        }
-
-        public bool IsNuevaReservacionVisible
-        {
-            get { return visible; }
-            set { visible = value; NotifyPropertyChanged("IsNuevaReservacionVisible"); }
         }
     }
 }
