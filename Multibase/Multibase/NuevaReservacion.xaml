@@ -24,7 +24,7 @@
                 <Label Content="Noches:" HorizontalAlignment="Left" Margin="429,9,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" Width="70"/>
                 <Label Content="Label" HorizontalAlignment="Left" Margin="499,9,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
                 <DatePicker HorizontalAlignment="Left" Margin="41,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.203,-0.273"/>
-                <DatePicker HorizontalAlignment="Left" Margin="236,25,0,0" VerticalAlignment="Top" Text="dddd"/>
+                <DatePicker HorizontalAlignment="Left" Margin="236,24,0,0" VerticalAlignment="Top" Text="dddd"/>
                 <CheckBox Content="Servicio de gimnasio" HorizontalAlignment="Left" Height="21" Margin="429,43,0,-3" VerticalAlignment="Top" Width="159" FontSize="14" Background="White" Foreground="White"/>
             </Grid>
 

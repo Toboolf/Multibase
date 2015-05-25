@@ -7,7 +7,7 @@
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
         <GroupBox Header="Nuevo cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,31,0,0" Height="233" Width="577" FontFamily="Microsoft JhengHei Light" FontSize="18" Foreground="White">
-            <Grid HorizontalAlignment="Left" Height="200" Margin="0,10,-2,0" VerticalAlignment="Top" Width="567">
+            <Grid HorizontalAlignment="Left" Height="200" Margin="0,7,-2,-4" VerticalAlignment="Top" Width="567">
                 <Label Content="Nombre:" HorizontalAlignment="Left" Margin="45,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.196,-0.385" FontSize="14" Foreground="White"/>
                 <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="45,76,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
                 <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="45,121,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
