@@ -26,12 +26,14 @@ namespace Multibase
             Clientes clienteObj = new Clientes();
             Cuentas cuentaObj = new Cuentas();
             Habitacion habitacionObj = new Habitacion();
+            Habitacion habitacionObj2 = new Habitacion();
             Reservacion reservacionObj = new Reservacion();
             Usuarios usuarioObj = new Usuarios();
 
             stackClient.Children.Add(clienteObj);
             stackCuentas.Children.Add(cuentaObj);
             stackHab.Children.Add(habitacionObj);
+            //stackHab.Children.Add(habitacionObj2);
             stackRes.Children.Add(reservacionObj);
             stackUser.Children.Add(usuarioObj);
         }
