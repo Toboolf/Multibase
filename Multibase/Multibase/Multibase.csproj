@@ -59,6 +59,7 @@
     <Compile Include="Cuentas.xaml.cs">
       <DependentUpon>Cuentas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HotelConnection.cs" />
     <Compile Include="NuevaReservacion.xaml.cs">
       <DependentUpon>NuevaReservacion.xaml</DependentUpon>
     </Compile>
