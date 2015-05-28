@@ -1,24 +1,25 @@
-﻿<UserControl x:Class="Multibase.AgregarCliente"
+﻿<Window x:Class="Multibase.AgregarCliente"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="373" d:DesignWidth="675">
+             d:DesignHeight="373" d:DesignWidth="675" Background="#FFE0575D" ResizeMode="NoResize"
+            Width="675" Height="373">
     <Grid>
         <GroupBox Header="Nuevo cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,31,0,0" Height="233" Width="577" FontFamily="Microsoft JhengHei Light" FontSize="18" Foreground="White">
             <Grid HorizontalAlignment="Left" Height="200" Margin="0,7,-2,-4" VerticalAlignment="Top" Width="567">
                 <Label Content="Nombre:" HorizontalAlignment="Left" Margin="45,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.196,-0.385" FontSize="14" Foreground="White"/>
                 <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="45,76,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
                 <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="45,121,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="190,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="190,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="190,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
+                <TextBox x:Name="nombre" HorizontalAlignment="Left" Height="23" Margin="190,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
+                <TextBox x:Name="apaterno" HorizontalAlignment="Left" Height="23" Margin="190,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
+                <TextBox x:Name="amaterno" HorizontalAlignment="Left" Height="23" Margin="190,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" FontSize="14"/>
             </Grid>
 
         </GroupBox>
-        <Button Content="Aceptar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="183,297,0,0" FontSize="14" FontFamily="Microsoft JhengHei Light"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="183,297,0,0" FontSize="14" FontFamily="Microsoft JhengHei Light" Click="Button_Click"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="419,297,0,0" VerticalAlignment="Top" Width="75" FontFamily="Microsoft JhengHei Light" FontSize="14"/>
 
     </Grid>
-</UserControl>
+</Window>

@@ -20,5 +20,9 @@ namespace Multibase
             apMat = am;
 
         }
+        public ClienteHotel()
+        {
+
+        }
     }
 }

@@ -7,7 +7,7 @@
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
         <!--ScrollViewer x:Name="___No_Name_" HorizontalAlignment="Left" Height="295" VerticalAlignment="Top" Width="620" Margin="25,10,0,0" HorizontalScrollBarVisibility="Hidden"-->
-        <ListView Name="gridCliente" ItemsSource="{Binding Path=clientesHotelList}" FontFamily="Microsoft JhengHei Light" FontSize="14" Height="295" Margin="35,27,36,51" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListView Name="gridCliente" ItemsSource="{Binding Path=clientesHotelList}" FontFamily="Microsoft JhengHei Light" FontSize="14" Height="295" Margin="35,27,36,51" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="gridCliente_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=nombre}" Header="Nombre" Width="200"/>

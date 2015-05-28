@@ -18,11 +18,32 @@ namespace Multibase
     /// <summary>
     /// Interaction logic for AgregarCliente.xaml
     /// </summary>
-    public partial class AgregarCliente : UserControl
+    public partial class AgregarCliente : Window
     {
         public AgregarCliente()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ClienteHotel cliente = new ClienteHotel();
+            cliente.nombre = nombre.Text;
+            cliente.apPat = apaterno.Text;
+            cliente.apMat = amaterno.Text;
+            HotelConnection con = new HotelConnection();
+            con.AgregaCliente(cliente);
+            MessageBox.Show("Cliente agregado correctamente! (:");
+
+            NuevaReservacion window = new NuevaReservacion();
+            window.nombre.Text = cliente.nombre;
+            window.apaterno.Text = cliente.apPat;
+            window.amaterno.Text = cliente.apMat;
+            window.Show();
+            this.Close();
+
+        }
+
+        
     }
 }

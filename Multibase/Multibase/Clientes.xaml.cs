@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.Runtime.InteropServices;
 
 namespace Multibase
 {
@@ -26,12 +27,27 @@ namespace Multibase
         {
             InitializeComponent();
             clientesHotelList = new ObservableCollection<ClienteHotel>();
-            clientesHotelList.Add(new ClienteHotel("Pancho", "Pérez", "Pérez"));
-            clientesHotelList.Add(new ClienteHotel("Karla", "López", "López"));
+            HotelConnection con = new HotelConnection();
+            clientesHotelList = con.Clientes();
+            //clientesHotelList.Add(new ClienteHotel("Pancho", "Pérez", "Pérez"));
+            //clientesHotelList.Add(new ClienteHotel("Karla", "López", "López"));
             DataContext = this;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AgregarCliente window = new AgregarCliente();
+            //window.amaterno.Text = "test";
+            window.Show();
+
+            /*AgregarCliente OP = new AgregarCliente();
+            var host = new Window();
+            host.Content = OP;
+            host.Show();*/
+            
+        }
+
+        private void gridCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
