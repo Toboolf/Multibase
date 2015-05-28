@@ -34,6 +34,11 @@ namespace Multibase
             HotelConnection con = new HotelConnection();
             
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
     

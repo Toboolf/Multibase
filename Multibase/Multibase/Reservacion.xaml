@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="373" d:DesignWidth="675">
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="293" VerticalAlignment="Top" Width="606" Margin="35,16,0,0" FontFamily="Microsoft JhengHei Light" FontSize="14">
+        <ListView HorizontalAlignment="Left" Height="293" VerticalAlignment="Top" Width="606" Margin="35,16,0,0" FontFamily="Microsoft JhengHei Light" FontSize="14" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="idReservacion" Width="200"/>

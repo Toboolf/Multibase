@@ -179,5 +179,12 @@ namespace Multibase
 
         }
 
+        public List<Reservacion> MostrarReservacionesCliente()
+        {
+            List<Reservacion> reservaciones = new List<Reservacion>();
+
+                return reservaciones;
+        }
+
     }
 }
