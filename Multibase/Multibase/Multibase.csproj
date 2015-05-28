@@ -60,11 +60,13 @@
     <Compile Include="Cuentas.xaml.cs">
       <DependentUpon>Cuentas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Habitacion.cs" />
     <Compile Include="HabitacionHotel.cs" />
     <Compile Include="HotelConnection.cs" />
     <Compile Include="NuevaReservacion.xaml.cs">
       <DependentUpon>NuevaReservacion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Reservacion.cs" />
     <Compile Include="Reservacion.xaml.cs">
       <DependentUpon>Reservacion.xaml</DependentUpon>
     </Compile>

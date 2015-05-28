@@ -20,9 +20,21 @@ namespace Multibase
     /// </summary>
     public partial class Reservacion : UserControl
     {
+        public static int noReservacion;
         public Reservacion()
         {
             InitializeComponent();
+            reservacionesdelcliente();
+        }
+
+
+
+        public void reservacionesdelcliente()
+        {
+            HotelConnection con = new HotelConnection();
+            
         }
     }
+
+    
 }
